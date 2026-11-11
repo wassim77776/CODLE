@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#121213">
+    <title>CODLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CODLE</h1>
+        <p>The Computer Science Word Guessing Game</p>
+    </header>
+
+    <main>
+        <div id="message"></div>
+
+        <button id="hint-button" type="button">Show Hint</button>
+        <section id="hint-box" class="hidden" aria-live="polite">
+            <span class="hint-label">WORD HINT</span>
+            <p id="word-hint"></p>
+        </section>
+
+        <div id="board"></div>
+        <div id="keyboard"></div>
+
+        <button id="restart">New Game</button>
+
+        <div id="stats-popup" class="popup hidden">
+            <div class="popup-content">
+                <h2>Statistics</h2>
+
+                <div class="stats-grid">
+                    <div>
+                        <strong id="played">0</strong>
+                        <span>Played</span>
+                    </div>
+                    <div>
+                        <strong id="win-rate">0%</strong>
+                        <span>Win rate</span>
+                    </div>
+                    <div>
+                        <strong id="current-streak">0</strong>
+                        <span>Current streak</span>
+                    </div>
+                    <div>
+                        <strong id="best-streak">0</strong>
+                        <span>Best streak</span>
+                    </div>
+                </div>
+
+                <h3>Guess distribution</h3>
+                <div id="guess-distribution"></div>
+
+                <p id="answer-text"></p>
+
+                <a id="definition-link"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Search Google definition
+                </a>
+
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
